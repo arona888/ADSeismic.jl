@@ -59,7 +59,7 @@ include_directories(${TF_INC} ${PREFIXDIR} ${CUDA_INC})
 link_directories(${LIBDIR})
 
 find_package(CUDA QUIET REQUIRED)
-set(CMAKE_CXX_FLAGS "-std=c++17 ${CMAKE_CXX_FLAGS}")
+set(CMAKE_CXX_FLAGS "-std=c++14 ${CMAKE_CXX_FLAGS}")
 set(CMAKE_CXX_FLAGS "-O3 ${CMAKE_CXX_FLAGS}")
 set(CMAKE_CXX_FLAGS "-shared ${CMAKE_CXX_FLAGS}")
 set(CMAKE_CXX_FLAGS "-fPIC ${CMAKE_CXX_FLAGS}")
